@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--body-background-default);
+  box-shadow: var(--box-shadow);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-color-dark);
+}

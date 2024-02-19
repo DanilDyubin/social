@@ -1,0 +1,9 @@
+:root {
+  --text-color-dark: #000000;
+
+  --body-background-dark: #0d1117;
+  --body-background-light: #fff;
+  --body-background-default: var(#{--body-background-light});
+
+  --box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+}
