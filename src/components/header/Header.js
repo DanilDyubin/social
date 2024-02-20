@@ -1,23 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useContext } from 'react';
+import { ThemeContext } from '../../context/themeContext';
 import s from './header.module.scss';
 
 const Header = () => {
-  const [theme, setTheme] = useState('light');
-
-  const onChangeTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
-
-  useEffect(() => {
-    const root = document.querySelector(':root');
-    const themes = ['body-background'];
-    themes.map(
-      (item) => {
-        root.style.setProperty(`--${item}-default`, `var(--${item}-${theme})`);
-      },
-      [theme],
-    );
-  });
+  const { onChangeTheme } = useContext(ThemeContext);
 
   return (
     <header className={s.header}>
