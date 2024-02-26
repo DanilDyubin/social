@@ -1,4 +1,4 @@
-import s from './Post.module.scss';
+import s from './post.module.scss';
 
 const Post = () => {
   return (
@@ -12,8 +12,14 @@ const Post = () => {
           </div>
         </div>
       </div>
-      <div className={s.content}></div>
-      <div className={s.info}></div>
+      <div className={s.content}>
+        <p>post.desc</p>
+      </div>
+      <div className={s.info}>
+        <div>12 likes</div>
+        <div>12 comments</div>
+        <div>share</div>
+      </div>
     </div>
   );
 };

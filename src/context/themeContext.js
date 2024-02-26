@@ -13,7 +13,7 @@ export const ThemeContextProvider = ({ children }) => {
     localStorage.setItem('theme', theme);
 
     const root = document.querySelector(':root');
-    const themes = ['body-background'];
+    const themes = ['body-background', 'text-color'];
     themes.map((item) => {
       root.style.setProperty(`--${item}-default`, `var(--${item}-${theme})`);
     });

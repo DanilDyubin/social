@@ -1,14 +1,94 @@
 @import '../../styles/variables.scss';
 
 .header {
+}
+
+.header_container {
+  border-radius: 4px;
   width: 100%;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
   background-color: var(--body-background-default);
   box-shadow: var(--box-shadow);
 }
 
+.header_left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .logo {
+  padding: 8px;
   font-size: 28px;
   font-weight: 700;
-  color: var(--text-color-dark);
+  background-color: rgb(73, 102, 231);
+  border-radius: 100%;
+  color: var(--text-color-default);
+}
+
+.logo_txt {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color-default);
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+}
+
+.theme {
+  width: 24px;
+  height: 24px;
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.menu_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: rgba(180, 180, 180, 0.25);
+}
+.icon {
+  font-size: 18px;
+  color: var(--text-color-default);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.user_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+  img {
+    width: 100%;
+    border-radius: 100%;
+  }
 }
