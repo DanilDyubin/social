@@ -1,11 +1,11 @@
-import { useState, createContext } from 'react';
+// import { useState, createContext } from 'react';
 
-export const TestContext = createContext('light');
+// export const TestContext = createContext('light');
 
-const TestContextProvider = ({ children }) => {
-  const [test, setTest] = useState('light');
+// const TestContextProvider = ({ children }) => {
+//   const [test, setTest] = useState('light');
 
-  return <TestContext.Provider value={{ test }}>{children}</TestContext.Provider>;
-};
+//   return <TestContext.Provider value={{ test }}>{children}</TestContext.Provider>;
+// };
 
-export default TestContextProvider;
+// export default TestContextProvider;

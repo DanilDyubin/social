@@ -1,8 +1,10 @@
-// const func = (num) => {
-//     let num1;
-//     num1 = num.toString();
-//     let second = num1[1];
-//      return +num1.replace(second, '');
-// }
+const RightBar = () => {
+  return (
+    <div>
+      <h2>RightBar</h2>
+      <div>RightBar</div>
+    </div>
+  );
+};
 
-// console.log(func(324));
+export default RightBar;
